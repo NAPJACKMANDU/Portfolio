@@ -211,7 +211,7 @@ footer {
 		<div>책임감을 갖고 목표를 달성하는 남윤서입니다.</div>
 	</section>
 	<div>
-	<img class="img6" alt=" " src="/img/Group6.png"
+	<img class="img6" alt="" src="/img/Group6.png"
 			style="vertical-align: middle;">
 	<span style="display: flex; align-items: center;">
 			<h2 style="margin-left: 10%; padding-right: 5px;">contents</h2> 
