@@ -215,7 +215,7 @@ footer {
 			style="vertical-align: middle;">
 	<span style="display: flex; align-items: center;">
 			<h2 style="margin-left: 10%; padding-right: 5px;">contents</h2> 
-		</span>
+		</span>  
 	</div>
 	 <div class="container">
     <div class="content">
