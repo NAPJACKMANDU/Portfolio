@@ -77,7 +77,7 @@ padding-top : 20px;
 }
 
 .img2 {
-	width: 1%; /* 화면 크기에 맞게 가로 크기를 설정 */
+	width: 2.5%; /* 화면 크기에 맞게 가로 크기를 설정 */
 	height: auto; /* 가로 비율에 따라 세로를 자동 조정 */
 	object-fit: cover; /* 이미지 비율을 유지하며 크기에 맞추기 */
 	padding-top: 1%;
@@ -116,7 +116,7 @@ header p {
 }
 
 .img4 {
-	width: 4.1%; /* 화면 크기에 맞게 가로 크기를 설정 */
+	width: 6.7%; /* 화면 크기에 맞게 가로 크기를 설정 */
 	height: auto; /* 가로 비율에 따라 세로를 자동 조정 */
 	object-fit: cover; /* 이미지 비율을 유지하며 크기에 맞추기 */
 	transform: scaleX(-1); /* 좌우 반전 */
@@ -302,10 +302,10 @@ padding-left: 20px;
 }
 
 .img9 {
-    width: 30px; /* 고정된 크기 설정 */
-    height: 30px; /* 고정된 크기 설정 */
-    object-fit: cover; /* 이미지 비율 유지 */
-    margin-right: 10px; /* 텍스트와 간격 조정 */
+	width:8.3%; /* 화면 크기에 맞게 가로 크기를 설정 */
+	height: auto; /* 가로 비율에 따라 세로를 자동 조정 */
+	object-fit: cover; /* 이미지 비율을 유지하며 크기에 맞추기 */
+	padding-left:60px;
 }
 
 
@@ -373,9 +373,18 @@ padding-left: 20px;
 }
 
 .name{
-
+	margin-top:5px;
     font-size: 1.0rem;
     text-align: center; 
+}
+
+.yunseo{
+width: 250px; 
+height: 300px; 
+object-fit: cover; 
+border-radius: 40px;
+margin-bottom: 150px;
+ border: 3px solid #F7FFC8;
 }
 </style>
 </head>
@@ -390,27 +399,32 @@ padding-left: 20px;
 	<img class="img1" alt="" src="/img/Rectangle5.png">
 	
 	<div class = "about-me">
-	<section>
-		<h2>About</h2>
-		<span style="display: flex; align-items: center;">
-			<h2 style="margin-left: 15%; padding-right: 5px;">Me</h2> <img
-			class="img2" alt="" src="/img/Ellipse10.png"
-			style="vertical-align: middle;">
-		</span>
-		
-		<div class="box1">ㅤ</div>
-		
-		<p>Hello!</p>
-		 <span style="display: flex; align-items: center;">
-		 <img class="img4" alt="" src="/img/Group13.png"
-			style="vertical-align: middle;">
-			<p style="margin-left: 1%; padding-right: 5px;">I'm
-				Yunseo Nam</p> <img class="img2" alt="" src="/img/Ellipse10.png"
-			style="vertical-align: middle;">
-		</span>
+<section>
+    <h2>About</h2>
+    <div style="display: flex; justify-content: space-between;">
+        <!-- 왼쪽: About Me -->
+        <div>
+            <span style="display: flex; align-items: center;">
+               	<h2 style="margin-left: 28%; padding-right: 5px;">Me</h2>
+                <img class="img2" alt="About Icon" src="/img/Ellipse10.png" style="vertical-align: middle;">
+            </span>
+            <div class="box1">ㅤ</div>
+            <p>Hello!</p>
+            <span style="display: flex; align-items: center;">
+                <img class="img4" alt="Icon" src="/img/Group13.png" style="vertical-align: middle;">
+                <p style="margin-left: 1%; padding-right: 5px;">I'm Yunseo Nam</p>
+                <img class="img2" alt="Icon" src="/img/Ellipse10.png" style="vertical-align: middle;">
+            </span>
+            <div class="it-me">책임감을 갖고 목표를 달성하는 남윤서입니다.</div>
+        </div>
 
-		<div class = "it-me">책임감을 갖고 목표를 달성하는 남윤서입니다.</div>
-	</section>
+        <!-- 오른쪽: 증명사진 -->
+        <div> 
+            <img  class = "yunseo" src="/img/증명사진.jpg" alt="증명사진">
+        </div>
+    </div>
+</section>
+
 	</br>
 	<span style="display: flex; align-items: center; justify-content: flex-end;">
         <img class="img6" alt="" src="/img/Group6.png" style="vertical-align: middle;">
@@ -484,7 +498,7 @@ padding-left: 20px;
                 	<img src="/icons/Java.png" alt="Java">
             	</div>
             	<h2>Java</h2>
-            	<p>자바입니다.</p>
+            	<p>자바</p>
         	</div>
         
         	<!-- Card 2 -->
@@ -493,7 +507,7 @@ padding-left: 20px;
         	        <img src="/icons/Python.png" alt="Python">
         	    </div>
         	    <h2>Python</h2>
-        	    <p>파이썬입니다.</p>
+        	    <p>파이썬</p>
         	</div>
         
         	<!-- Card 3 -->
@@ -502,7 +516,7 @@ padding-left: 20px;
         	        <img src="/icons/SpringBoot.png" alt="SpringBoot">
         	    </div>
         	    <h2>Spring Boot</h2>
-        	    <p>Spring Boot입니다.</p>
+        	    <p>Spring Boot</p>
        	  	</div>
         
         	<!-- Card 4 -->
@@ -511,7 +525,7 @@ padding-left: 20px;
         	        <img src="/icons/FastAPI.svg" alt="FastAPI">
         	    </div>
         	    <h2>FastAPI</h2>
-        	    <p>FastAPI입니다.</p>
+        	    <p>FastAPI</p>
         	</div>
         
         	<!-- Card 5 -->
@@ -522,7 +536,7 @@ padding-left: 20px;
         	        <img src="/icons/Js.png" alt="Js">
         	    </div>
         	    <h2>Html & Css & Js</h2>
-        	    <p>Html, Css, JS 입니다.</p>
+        	    <p>Html, Css, JS </p>
         	</div>
         
         	<!-- Card 6 -->
@@ -591,15 +605,15 @@ padding-left: 20px;
 			<div class="PR_card">
 				<img class="PR_img" src="/img/걸음마.png" alt="걸음마">
 				
-				<div class="PR_content">
-					<h2>PROJECT BabyStep</h2>
-					<div class="icon">
+				<div class="PR_content" >
+					<h2 style="padding-bottom: 6px;">PROJECT BabyStep</h2>
+					<div class="icon" style="padding-bottom: 6px; ">
 						<img src="/icons/SpringBoot.png" alt="SpringBoot">
 						<img src="/icons/Java.png" alt="Java">
 						<img src="/icons/Python.png" alt="Python">
 						<img src="/icons/MySQL.svg" alt="MySQL">
 					</div>
-					<p>AI기반 심리검사 및 동화생성 서비스</p>
+					<p>데이터 기반 맞춤형 육아 일정 관리 서비스</p>
 				</div>
 			</div>
 			
@@ -607,14 +621,14 @@ padding-left: 20px;
 			<div class="PR_card">
 				<img class="PR_img" src="/img/사각지대.png" alt="씨씨콜콜">
 				<div class="PR_content">
-					<h2>PROJECT SEESEECALLCALL</h2>
-					<div class="icon">
+					<h2 style="padding-bottom: 6px;">PROJECT SEESEECALLCALL</h2>
+					<div class="icon" style="padding-bottom: 6px;">
 						<img src="/icons/SpringBoot.png" alt="SpringBoot">
 						<img src="/icons/Java.png" alt="Java">
 						<img src="/icons/Python.png" alt="Python">
 						<img src="/icons/MySQL.svg" alt="MySQL">
 					</div>
-					<p>AI기반 심리검사 및 동화생성 서비스</p>
+					<p>AI 활용 CCTV 실시간 안전 모니터링 솔루션</p>
 				</div>
 			</div>
 			
