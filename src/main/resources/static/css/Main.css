@@ -1,0 +1,368 @@
+@charset "EUC-KR";
+
+
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	margin : 0;
+}
+
+/* ������ Wrap */
+.ProfileWrap {
+	padding-top: 100px;
+	width: 100%;
+	height: 100%;
+	max-height: 1200px;
+	background-color: #DDECCA;
+	display: flex;
+}
+
+/* Profile ���� div */
+.Pr_LeftContent {
+	flex: 2;
+	display: flex;
+	padding-left: 15%; 
+}
+
+/* �̸� */
+.Pr_Name {
+	padding-top: 10%;
+	font-family: 'NEXON Lv2 Gothic';
+	font-weight: 700;
+	font-size: 5em;
+}
+
+/* ���� ���� */
+.Pr_Dev {
+	padding-top: 2%;
+	font-family: 'NEXON Lv2 Gothic';
+	font-size: 2em;
+	color: gray;
+}
+
+/* ���� �Ұ� */
+.Pr_Bio {
+	margin-top: 10%;
+	font-family: 'NEXON Lv2 Gothic';
+	font-size: 2em;
+}
+
+/* ���� �ΰ� */
+
+.Pr_ToolLogo {
+	display: flex;
+	margin-top: 40%;
+}
+
+/* Github */
+
+.github {
+	background-color: white;
+	border-radius: 50%; 
+	width: 50px; 
+	height: 50px; 
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.github a {
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	width: 100%; 
+	height: 100%;
+	text-decoration: none; 
+}
+
+.githubLogo {
+	width: 100%; 
+	height: auto; 
+}
+
+.github:hover {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	transform: scale(1.1); 
+}
+
+.githubLogo:hover {
+	transform: scale(1.1);
+}
+
+/* Velog */
+.velog {
+	margin-left: 25px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	width: 50px; 
+	height: 50px;
+	border-radius: 50%; 
+}
+
+.velogLogo {
+	border-radius: 50%; 
+	width: 50px; 
+	height: 50px;
+}
+
+.velogLogo {
+	width: 100%; 
+	height: auto; 
+}
+
+.velog:hover {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	transform: scale(1.1); 
+}
+
+.velogLogo:hover {
+	transform: scale(1.1);
+}
+
+/* Profile ������ div */
+.Pr_RightContent {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* ������ �̹��� */
+.Pr_Img {
+	width: 80%;
+	height: auto;
+	margin: 0;
+}
+
+
+/* ��� ���� */
+.what-i-do-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.title-section {
+    margin-bottom: 40px;
+}
+
+.title-section h1 {
+    font-size: 2.5em;
+    color: #222;
+    margin-bottom: 10px;
+    border-left: 4px solid #22b573;
+    padding-left: 30px;
+}
+
+.title-section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Cards container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1300px;
+}
+
+/* Single card */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card .icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #222;
+    margin-bottom: 10px;
+    margin: 0;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* MyProjectWrap CSS */
+
+.MyProjectWrap {
+	max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* ������Ʈ ī�� css */
+
+.PR_card {
+	background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.PR_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.PR_card .icon img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.PR_img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+/* ������Ʈ ���� css */
+.PR_content{
+	padding: 20px;
+}
+
+
+/* Award CSS */
+.AwardWrap {
+	max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.award-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.award-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.award-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.award-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #222;
+}
+
+.award-content h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.award-dates {
+    font-size: 1em;
+    color: #888;
+    margin-top: 5px;
+    display: block;
+}
+
+
+
+/* Careers CSS */
+.CareersWrap {
+	max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.career-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.career-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding-bottom: 20px;
+}
+
+.career-logo {
+    width: 100px;
+    height: 100px;
+	border-radius: 50%;
+    object-fit: cover;
+}
+
+.career-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #222;
+}
+
+.career-content h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.career-dates {
+    font-size: 1em;
+    color: #888;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.career-content p {
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #555;
+}
+
+.career-content ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+    list-style-type: disc;
+    color: #555;
+    line-height: 1.5;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
