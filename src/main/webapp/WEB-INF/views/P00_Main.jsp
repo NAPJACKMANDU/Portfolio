@@ -107,7 +107,6 @@ header p {
     padding-left: 110px; /* 전체 컨테이너에 패딩 추가 */
     padding-right: 110px; /* 전체 컨테이너에 패딩 추가 */
     font-size: 3.5rem;
-    
  }  
 
 .about-me, .container, .MyProjectWrap {
@@ -116,7 +115,7 @@ header p {
 }
 
 .img4 {
-	width: 6.7%; /* 화면 크기에 맞게 가로 크기를 설정 */
+	width: 4.7%; /* 화면 크기에 맞게 가로 크기를 설정 */
 	height: auto; /* 가로 비율에 따라 세로를 자동 조정 */
 	object-fit: cover; /* 이미지 비율을 유지하며 크기에 맞추기 */
 	transform: scaleX(-1); /* 좌우 반전 */
@@ -378,13 +377,22 @@ padding-left: 20px;
     text-align: center; 
 }
 
-.yunseo{
-width: 250px; 
-height: 300px; 
-object-fit: cover; 
-border-radius: 40px;
-margin-bottom: 150px;
- border: 3px solid #F7FFC8;
+.yunseo {
+    width: 250px; /* 사진 크기 조정 */
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #F7FFC8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 20px; /* 텍스트와의 간격 */
+}
+
+
+.img12{
+    width: 2.0%;
+    height: auto;
+    object-fit: cover;
+    padding-top: 1%;
 }
 </style>
 </head>
@@ -400,28 +408,31 @@ margin-bottom: 150px;
 	
 	<div class = "about-me">
 <section>
-    <h2>About</h2>
-    <div style="display: flex; justify-content: space-between;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
         <!-- 왼쪽: About Me -->
-        <div>
-            <span style="display: flex; align-items: center;">
+        <div style="flex: 1;">
+            <h2 style="display: flex; align-items: center;">
+                About</h2>
+                 <span style="display: flex; align-items: center;">
                	<h2 style="margin-left: 28%; padding-right: 5px;">Me</h2>
                 <img class="img2" alt="About Icon" src="/img/Ellipse10.png" style="vertical-align: middle;">
             </span>
-            <div class="box1">ㅤ</div>
-            <p>Hello!</p>
-            <span style="display: flex; align-items: center;">
-                <img class="img4" alt="Icon" src="/img/Group13.png" style="vertical-align: middle;">
-                <p style="margin-left: 1%; padding-right: 5px;">I'm Yunseo Nam</p>
-                <img class="img2" alt="Icon" src="/img/Ellipse10.png" style="vertical-align: middle;">
-            </span>
-            <div class="it-me">책임감을 갖고 목표를 달성하는 남윤서입니다.</div>
         </div>
 
         <!-- 오른쪽: 증명사진 -->
-        <div> 
-            <img  class = "yunseo" src="/img/증명사진.jpg" alt="증명사진">
+        <div>
+            <img class="yunseo" src="/img/증명사진.jpg" alt="증명사진">
         </div>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <p>Hello!</p>
+        <span style="display: flex; align-items: center;">
+            <img class="img4" alt="Icon" src="/img/Group13.png" style="vertical-align: middle;">
+            <p style="margin-left: 1%; padding-right: 5px;">I'm Yunseo Nam</p>
+            <img class="img12" alt="Icon" src="/img/Ellipse10.png" style="vertical-align: middle;">
+        </span>
+        <div class="it-me">책임감을 갖고 목표를 달성하는 남윤서입니다.</div>
     </div>
 </section>
 
