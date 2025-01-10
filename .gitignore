@@ -9,7 +9,6 @@ target/
 *.yml
 *.properties
 
-
 ### STS ###
 .apt_generated
 .classpath
