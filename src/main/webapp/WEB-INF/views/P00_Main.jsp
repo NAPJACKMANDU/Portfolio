@@ -418,7 +418,7 @@ padding-left: 20px;
                	<h2 style="margin-left: 30%; padding-right: 5px; font-size: 80px">Me</h2>
                 <img class="img2" alt="About Icon" src="/img/Ellipse10.png" style="vertical-align: middle;">
             </span>
-        </div>
+        </div>  
 
         <!-- 오른쪽: 증명사진 -->
         <div>
