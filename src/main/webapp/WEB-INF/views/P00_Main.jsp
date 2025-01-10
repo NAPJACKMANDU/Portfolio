@@ -106,7 +106,7 @@ header p {
     flex-direction: column;
     padding-left: 110px; /* 전체 컨테이너에 패딩 추가 */
     padding-right: 110px; /* 전체 컨테이너에 패딩 추가 */
-    font-size: 3.5rem;
+    font-size: 3.5re;
  }  
 
 .about-me, .container, .MyProjectWrap {
