@@ -116,7 +116,7 @@ header p {
 }
 
 .img4 {
-	width: 4.4%; /* 화면 크기에 맞게 가로 크기를 설정 */
+	width: 4.7%; /* 화면 크기에 맞게 가로 크기를 설정 */
 	height: auto; /* 가로 비율에 따라 세로를 자동 조정 */
 	object-fit: cover; /* 이미지 비율을 유지하며 크기에 맞추기 */
 	transform: scaleX(-1); /* 좌우 반전 */
@@ -412,10 +412,10 @@ padding-left: 20px;
     <div style="display: flex; align-items: center; justify-content: space-between;">
         <!-- 왼쪽: About Me -->
         <div style="flex: 1;">
-            <h2 style="display: flex; align-items: center;">
+            <h2 class="" style="display: flex; align-items: center; font-size: 80px">
                 About</h2>
                  <span style="display: flex; align-items: center;">
-               	<h2 style="margin-left: 23%; padding-right: 5px;">Me</h2>
+               	<h2 style="margin-left: 30%; padding-right: 5px; font-size: 80px">Me</h2>
                 <img class="img2" alt="About Icon" src="/img/Ellipse10.png" style="vertical-align: middle;">
             </span>
         </div>
