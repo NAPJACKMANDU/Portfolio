@@ -28,7 +28,7 @@ public ResponseEntity<?> healthCheck() {
 	Map<String, String> responseData = new HashMap<>();
 	responseData.put("serverName", serverName); // 민들어 놓은 서버
 	responseData.put("server", serverAddress); // 탄력 ip
-	responseData.put("server", serverPort); // 
+	responseData.put("port", serverPort); // 
 	responseData.put("env", env); // env 안에는 blue인지 green이지 들어가 있음
 	
 	// 서버의 상태르 확인하기 위함
