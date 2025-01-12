@@ -100,7 +100,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-websocket</artifactId>
 		</dependency>
-
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+</dependencies>
 		<!-- Spring Web: 기본 웹 서버와 컨트롤러 기능 제공 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
