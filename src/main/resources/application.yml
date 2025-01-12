@@ -4,7 +4,7 @@ spring:
     group:
       local: local, common
       blue: blue, common
-      green: green, common
+      green: green, common 
 
 server:
   env: blue
