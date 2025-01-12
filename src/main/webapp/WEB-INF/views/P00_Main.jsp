@@ -423,7 +423,7 @@ padding-left: 20px;
         <!-- 오른쪽: 증명사진 -->
         <div>
             <img class="yunseo" src="/img/증명사진.jpg" alt="증명사진">
-        </div>
+        </div>  
     </div>
 
     <div style="margin-top: 20px;">
