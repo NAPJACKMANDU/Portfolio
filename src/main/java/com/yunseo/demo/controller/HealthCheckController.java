@@ -17,7 +17,7 @@ private String env ;
 @Value("${server.port}")
 private String serverPort ;
 
-@Value("${server.serverAddress}")
+@Value("${server.address}")
 private String serverAddress ;
 
 @Value("${serverName}")
