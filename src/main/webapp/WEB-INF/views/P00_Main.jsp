@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" isELIgnored="false"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -409,7 +409,7 @@ padding-left: 20px;
 	
 	<div class = "about-me">
 <section>
-    <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; justify-content: space-between;">
         <!-- 왼쪽: About Me -->
         <div style="flex: 1;">
             <h2 class="" style="display: flex; align-items: center; font-size: 80px">
