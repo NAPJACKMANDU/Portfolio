@@ -12,7 +12,7 @@ public class MainController {
 	@Autowired
 	Mainservice service ;
 	
-	@GetMapping("/")
+	@GetMapping("/mandu")
 	public String mainpage() {
 		return "Main" ;
 	}
