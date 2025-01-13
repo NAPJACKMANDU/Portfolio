@@ -14,7 +14,7 @@ public class MainController {
 	
 	@GetMapping("/")
 	public String mainpage() {
-		return "P00_Main" ;
+		return "Main" ;
 	}
 	
 	
