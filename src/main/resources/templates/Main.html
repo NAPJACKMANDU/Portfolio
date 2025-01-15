@@ -44,10 +44,6 @@ time, mark, audio, video {
     
 }
 
-.name{
-    font-size: 1.0rem;
-    text-align: center; 
-}
 body {
 	margin: 0;
 	font-family: "Pretendard", Arial, sans-serif;
@@ -343,16 +339,14 @@ padding-left: 20px;
 }
 
 
-/* 카드 컨테이너 */
 .card-container {
     display: flex;
-    flex-wrap: wrap; /* 카드가 줄바꿈되도록 설정 */
-    gap: 30px; /* 카드 간의 간격 */
-    justify-content: space-between; /* 카드가 양쪽 끝에 정렬되도록 설정 */
-    padding: 20px;
+    flex-wrap: wrap;          /* 카드들이 넘칠 경우 자동으로 줄 바꿈 */
+    gap: 20px;                /* 카드 간 간격 */
+    justify-content: flex-start; /* 카드들을 왼쪽에 정렬 */
+    
 }
 
-/* 카드 크기 및 간격 조정 */
 .PR_card {
     background-color: white;
     border-radius: 10px;
@@ -360,9 +354,11 @@ padding-left: 20px;
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
     color: black;
-    width: calc(50% - 15px); /* 한 줄에 2개의 카드 표시 */
-    max-width: 600px; /* 카드 최대 크기 */
-    overflow: hidden; /* 카드 내부 내용이 넘치지 않도록 설정 */
+    width: calc(50% - 20px);  /* 카드 간격을 고려하여 50%에서 20px을 빼서 너비 설정 */
+    box-sizing: border-box;   /* padding, border 포함한 크기 계산 */
+    margin-bottom: 20px;       /* 카드들 간 아래쪽 여백 */
+    display: block;
+    text-decoration: none;
 }
 
 
@@ -437,6 +433,10 @@ padding-left: 20px;
     height: auto;
     object-fit: cover;
     padding-top: 1%;
+}
+
+.thanksforwatching {
+padding-top: 20px;
 }
 </style>
 </head>
@@ -668,53 +668,65 @@ padding-left: 20px;
 		</span>
 		</div>
 		
-		<!-- Project Cards -->
-		<div class="card-container">
   	
-			<!-- Arti -->
-			<div class="PR_card">
-				<img class="PR_img" src="/img/걸음마.png" alt="걸음마">
-				
-				<div class="PR_content" >
-					<h2 style="padding-bottom: 6px;">📅 BabyStep</h2>
-					<p>데이터 기반 맞춤형 육아 일정 관리 서비스</p>
-					<p>참여 인원: 4 명</p>
-				</div>
-			</div>
-			
-			<!-- AWS ToyProject Portfolio -->
-			<div class="PR_card">
-				<img class="PR_img" src="/img/사각지대.png" alt="씨씨콜콜">
-				<div class="PR_content">
-					<h2 style="padding-bottom: 6px;">🎥 SeeSeeCallCall</h2>
-					<p>AI 활용 CCTV 실시간 안전 모니터링 솔루션</p>
-					<p>참여 인원: 5 명</p>
-				</div>
-			</div>
-			
-			<!-- KDT Hackathon AIGO -->
-			<div class="PR_card">
-				<img class="PR_img" src="/img/AIGO.jpg" alt="AIGO">
-				<div class="PR_content">
-					<h2>🤖 KDT Hackathon AIGO</h2>
-					<p>AI 기반 고령자 초개인화 헬스케이 서비스</p>
-					<p>참여 인원: 4 명</p>
-				</div>
-			</div>
-			
-			<div class="PR_card">
-				<img class="PR_img" src="/img/portfolio1.png" alt="portfolio">
-				<div class="PR_content">
-					<h2>🏃🏻‍♀‍➡️ Portfolio</h2>
-					<p>AWS, DOKER, Github Action, Nginx를 활용한 포트폴리오 배포</p>
-					<p>참여 인원: 1 명</p>
-				</div>
-			</div>
-			
-		</div>
+			<!-- 걸음마 -->
+<div class="card-container">
+
+    <!-- 걸음마 -->
+    <a href="/BabyStep" class="PR_card" >
+        <div>
+            <img class="PR_img" src="/img/걸음마.png" alt="걸음마">
+            <div class="PR_content">
+                <h2 style="padding-bottom: 6px;">📅 BabyStep</h2>
+                <p>데이터 기반 맞춤형 육아 일정 관리 서비스</p>
+                <p>참여 인원: 4 명</p>
+            </div>
+        </div>
+    </a>
+
+    <!-- 씨씨콜콜 -->
+    <a href="/SeeSeeCallCall" class="PR_card">
+        <div >
+            <img class="PR_img" src="/img/사각지대.png" alt="씨씨콜콜">
+            <div class="PR_content">
+                <h2 style="padding-bottom: 6px;">🎥 SeeSeeCallCall</h2>
+                <p>AI 활용 CCTV 실시간 안전 모니터링 솔루션</p>
+                <p>참여 인원: 5 명</p>
+            </div>
+        </div>
+    </a>
+
+
+
+    <!-- KDT Hackathon AIGO -->
+        <a href="/AIGO" class="PR_card">
+    <div >
+        <img class="PR_img" src="/img/AIGO.jpg" alt="AIGO">
+        <div class="PR_content">
+            <h2>🤖 KDT Hackathon AIGO</h2>
+            <p>AI 기반 고령자 초개인화 헬스케이 서비스</p>
+            <p>참여 인원: 4 명</p>
+        </div>
+    </div>
+    </a>
+
+    <!-- Portfolio -->
+      <a href="/portfolio" class="PR_card">
+    <div>
+        <img class="PR_img" src="/img/portfolio1.png" alt="portfolio">
+        <div class="PR_content">
+            <h2>🏃🏻‍♀‍➡️ Portfolio</h2>
+            <p>AWS, DOKER, Github Action, Nginx를 활용한 포트폴리오 배포</p>
+            <p>참여 인원: 1 명</p>
+        </div>
+    </div>
+</a>
+</div>
+
+		<div class="thanksforwatching">
 		<p class="thanks">Thanks for</p>	
 		<p class="thank">watching</p>
-
+</div>
 	</div>
 		<img class="img10" alt="" src="/img/Rectangle7.png">
 		</br>

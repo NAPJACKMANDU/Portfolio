@@ -14,5 +14,23 @@ public class MainController {
 		return "Main" ;
 	}
 	
-	
+		@GetMapping("/BabyStep")
+		public String BabyStep() {
+			return "BabyStep" ;
+		}
+		
+		@GetMapping("/SeeSeeCallCall")
+		public String SeeSeeCallCall() {
+			return "SeeSeeCallCall" ;
+		}
+		
+		@GetMapping("/AIGO")
+		public String AIGO() {
+			return "AIGO" ;
+		}
+		
+		@GetMapping("/portfolio")
+		public String portfolio() {
+			return "portfolio" ;
+		}
 }
