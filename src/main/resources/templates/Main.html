@@ -60,6 +60,33 @@ body {
 	
 }
 
+/* 전체 헤더 스타일 */
+.header {
+    display: flex; /* 플렉스박스를 사용해 균등 배치 */
+    justify-content: space-around; /* 각 항목을 균등하게 나눔 */
+    align-items: center; /* 세로 가운데 정렬 */
+    text-align: center;
+    font-family: Pretendard, sans-serif; /* 폰트 스타일 */
+    font-size: 0.8em; /* 텍스트 크기 */
+    padding-bottom: 20px;
+}
+.header2 {
+display: flex; /* 플렉스박스를 사용해 균등 배치 */
+    justify-content: space-around; /* 각 항목을 균등하게 나눔 */
+    align-items: center; /* 세로 가운데 정렬 */
+    text-align: center;
+    font-family: Pretendard, sans-serif; /* 폰트 스타일 */
+    font-size: 0.8em; /* 텍스트 크기 */
+    margin-top: -50px;
+    
+    }
+/* 헤더 아이템 스타일 */
+.header-item {
+    flex: 1; /* 각 항목이 동일한 공간을 차지 */
+    margin: 0 10px; /* 좌우 여백 */
+}
+
+
 .img {
 padding-top : 20px;
 	width: 38%; /* 화면 크기에 맞게 가로 크기를 설정 */
@@ -132,6 +159,20 @@ header p {
 	object-fit: cover; /* 이미지 비율을 유지하며 크기에 맞추기 */
 	padding-left: 20px;
 }
+
+.img17 {
+	width: 4.0%; /* 화면 크기에 맞게 가로 크기를 설정 */
+	height: auto; /* 가로 비율에 따라 세로를 자동 조정 */
+	object-fit: cover; /* 이미지 비율을 유지하며 크기에 맞추기 */
+	padding-left: 20px;
+}
+
+.img19 {
+	width: 6.4%; /* 화면 크기에 맞게 가로 크기를 설정 */
+	height: auto; /* 가로 비율에 따라 세로를 자동 조정 */
+	object-fit: cover; /* 이미지 비율을 유지하며 크기에 맞추기 */
+	padding-left: 20px;
+}
 .box1 {
 	height: 58px; /* 가로 비율에 따라 세로를 자동 조정 */
 	color: black;
@@ -179,11 +220,6 @@ font-size: 1.2rem;
     flex: 1;
     min-width: 300px;
     padding: 10px; /* 카드와 동일한 패딩 추가 */
-}
-
-h3 {
-	color: #fffff;
-	font-size: 1.4rem;
 }
 
 ul {
@@ -300,12 +336,21 @@ padding-left: 20px;
 }
 
 .img9 {
-	width:8.3%; /* 화면 크기에 맞게 가로 크기를 설정 */
+	width:20px; /* 화면 크기에 맞게 가로 크기를 설정 */
 	height: auto; /* 가로 비율에 따라 세로를 자동 조정 */
 	object-fit: cover; /* 이미지 비율을 유지하며 크기에 맞추기 */
-	padding-left:60px;
+	padding-left: 7%;
 }
 
+
+/* 카드 컨테이너 */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* 카드가 줄바꿈되도록 설정 */
+    gap: 30px; /* 카드 간의 간격 */
+    justify-content: space-between; /* 카드가 양쪽 끝에 정렬되도록 설정 */
+    padding: 20px;
+}
 
 /* 카드 크기 및 간격 조정 */
 .PR_card {
@@ -315,15 +360,17 @@ padding-left: 20px;
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
     color: black;
-    width: calc(25% - 20px); /* 4개 카드가 한 줄에 들어가도록 계산 */
-    min-width: 250px; /* 최소 카드 크기 */
-    max-width: 300px; /* 최대 카드 크기 */
+    width: calc(50% - 15px); /* 한 줄에 2개의 카드 표시 */
+    max-width: 600px; /* 카드 최대 크기 */
+    overflow: hidden; /* 카드 내부 내용이 넘치지 않도록 설정 */
 }
 
-/* 반응형 디자인 - 모바일에서 카드 크기 조정 */
+
+
+/* 반응형 레이아웃 */
 @media (max-width: 768px) {
     .PR_card {
-        width: calc(50% - 20px); /* 2개씩 정렬 */
+        width: 100%; /* 모바일에서는 한 줄에 1개씩 표시 */
     }
 }
 
@@ -347,6 +394,9 @@ padding-left: 20px;
     padding: 20px;
 }
 
+.PR_content h2 {
+   font-size: 1.5rem;
+}
 
 .thanks {
     font-size: 7.2rem;
@@ -370,11 +420,6 @@ padding-left: 20px;
 
 }
 
-.name{
-	margin-top:5px;
-    font-size: 1.0rem;
-    text-align: center; 
-}
 
 .yunseo {
     width: 250px; /* 사진 크기 조정 */
@@ -397,17 +442,19 @@ padding-left: 20px;
 </head>
 <body>
 	<header>
-	<div class="name">
-		<span >NAM YUN-SEO</span> <span>BACKEND DEVELOPER
-			SEOUL, SOUTH KOREA 2025</span> <br>
-			</div>
+	<div class="header">
+    <span class="header-item">NAM YUN-SEO</span>
+    <span class="header-item">BACKEND DEVELOPER</span>
+    <span class="header-item">SEOUL, SOUTH KOREA 2025</span>
+</div>
+
 		<img class="img" alt="" src="/img/portfolio.png">
 	</header>
 	<img class="img1" alt="" src="/img/Rectangle5.png">
 	
 	<div class = "about-me">
 <section>
-    <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; justify-content: space-between;">
         <!-- 왼쪽: About Me -->
         <div style="flex: 1;">
             <h2 class="" style="display: flex; align-items: center; font-size: 80px">
@@ -422,9 +469,9 @@ padding-left: 20px;
         <div>
             <img class="yunseo" src="/img/증명사진.jpg" alt="증명사진">
         </div>  
-    </div>
+    </div>	
 
-    <div style="margin-top: 20px;">
+    <div style="margin-top: -30px;">
         <p>Hello!</p>
         <span style="display: flex; align-items: center;">
             <img class="img4" alt="Icon" src="/img/Group13.png" style="vertical-align: middle;">
@@ -579,17 +626,30 @@ padding-left: 20px;
         	</div>
     	</div>
     	</br>
-    	      <span style="display: flex; align-items: center;">
-    	<img
-			class="img7" alt="" src="/img/Ellipse11-1.png"
-			style="vertical-align: middle;">
-			<p class="title" ; style="padding-left: 7px;">AWARD</p> 
-		</span>
-		</br>
+    	      <div style="display: flex; align-items: flex-start; gap: 40px; padding-top: 20px" >
+    <!-- 첫 번째 항목 (AWARD) -->
+    <div>
+        <span style="display: flex; align-items: center;">
+            <img class="img17" alt="" src="/img/Ellipse11-1.png" style="vertical-align: middle;">
+            <p class="title" style="padding-left: 7px; padding-bottom: 10px; ">AWARD</p>
+        </span>
         <ul>
-        <div class="award-memo">제 6회 K-디지털 트레이닝 해커톤 직업능력심사평가원장상 (2024.11.21)</div>
+            <div class="award-memo">제 6회 K-디지털 트레이닝 해커톤 직업능력심사평가원장상 (2024.11.21)</div>
         </ul>
-	</div>
+    </div>
+
+    <!-- 두 번째 항목 (LICENSE) -->
+    <div>
+        <span style="display: flex; align-items: center;">
+            <img class="img19" alt="" src="/img/Ellipse11-1.png" style="vertical-align: middle;">
+            <p class="title" style="padding-left: 7px; padding-bottom: 10px">LICENSE</p>
+        </span>
+        <ul>
+            <div class="award-memo"  >SQL 개발자 자격증 (SQLD) 취득 (2024.06)</div>
+        </ul>
+    </div>
+</div>
+
        
       </div>
  
@@ -609,21 +669,16 @@ padding-left: 20px;
 		</div>
 		
 		<!-- Project Cards -->
-		<div class="cards-container">
-			
+		<div class="card-container">
+  	
 			<!-- Arti -->
 			<div class="PR_card">
 				<img class="PR_img" src="/img/걸음마.png" alt="걸음마">
 				
 				<div class="PR_content" >
-					<h2 style="padding-bottom: 6px;">PROJECT BabyStep</h2>
-					<div class="icon" style="padding-bottom: 6px; ">
-						<img src="/icons/SpringBoot.png" alt="SpringBoot">
-						<img src="/icons/Java.png" alt="Java">
-						<img src="/icons/Python.png" alt="Python">
-						<img src="/icons/MySQL.svg" alt="MySQL">
-					</div>
+					<h2 style="padding-bottom: 6px;">📅 BabyStep</h2>
 					<p>데이터 기반 맞춤형 육아 일정 관리 서비스</p>
+					<p>참여 인원: 4 명</p>
 				</div>
 			</div>
 			
@@ -631,44 +686,28 @@ padding-left: 20px;
 			<div class="PR_card">
 				<img class="PR_img" src="/img/사각지대.png" alt="씨씨콜콜">
 				<div class="PR_content">
-					<h2 style="padding-bottom: 6px;">PROJECT SEESEECALLCALL</h2>
-					<div class="icon" style="padding-bottom: 6px;">
-						<img src="/icons/SpringBoot.png" alt="SpringBoot">
-						<img src="/icons/Java.png" alt="Java">
-						<img src="/icons/Python.png" alt="Python">
-						<img src="/icons/MySQL.svg" alt="MySQL">
-					</div>
+					<h2 style="padding-bottom: 6px;">🎥 SeeSeeCallCall</h2>
 					<p>AI 활용 CCTV 실시간 안전 모니터링 솔루션</p>
+					<p>참여 인원: 5 명</p>
 				</div>
 			</div>
 			
 			<!-- KDT Hackathon AIGO -->
 			<div class="PR_card">
-				<img class="PR_img" src="https://images-v3.develofolio.com/images/7ee23b11-941f-41ac-9cec-7cd3c1964780/project/083e361e-842d-4732-8043-104aab5d6584-student-849824_1920.jpg?w=1920" alt="ARTI">
+				<img class="PR_img" src="/img/AIGO.jpg" alt="AIGO">
 				<div class="PR_content">
-					<h2>KDT Hackathon AIGO</h2>
-					<div class="icon">
-						<img src="/icons/SpringBoot.png" alt="SpringBoot">
-						<img src="/icons/Java.png" alt="Java">
-						<img src="/icons/Python.png" alt="Python">
-						<img src="/icons/MySQL.svg" alt="MySQL">
-					</div>
-					<p>AI기반 심리검사 및 동화생성 서비스</p>
+					<h2>🤖 KDT Hackathon AIGO</h2>
+					<p>AI 기반 고령자 초개인화 헬스케이 서비스</p>
+					<p>참여 인원: 4 명</p>
 				</div>
 			</div>
 			
-			<!-- BabyStep -->
 			<div class="PR_card">
-				<img class="PR_img" src="https://images-v3.develofolio.com/images/7ee23b11-941f-41ac-9cec-7cd3c1964780/project/083e361e-842d-4732-8043-104aab5d6584-student-849824_1920.jpg?w=1920" alt="ARTI">
+				<img class="PR_img" src="/img/portfolio1.png" alt="portfolio">
 				<div class="PR_content">
-					<h2>PROJECT BabyStep</h2>
-					<div class="icon">
-						<img src="/icons/SpringBoot.png" alt="SpringBoot">
-						<img src="/icons/Java.png" alt="Java">
-						<img src="/icons/Python.png" alt="Python">
-						<img src="/icons/MySQL.svg" alt="MySQL">
-					</div>
-					<p>AI기반 심리검사 및 동화생성 서비스</p>
+					<h2>🏃🏻‍♀‍➡️ Portfolio</h2>
+					<p>AWS, DOKER, Github Action, Nginx를 활용한 포트폴리오 배포</p>
+					<p>참여 인원: 1 명</p>
 				</div>
 			</div>
 			
@@ -679,11 +718,11 @@ padding-left: 20px;
 	</div>
 		<img class="img10" alt="" src="/img/Rectangle7.png">
 		</br>
-		<div class="name">
-		<span>NAM YUN-SEO</span> 
-		<span>BACKEND DEVELOPER
-			SEOUL, SOUTH KOREA 2025</span> </br>
-			</div>
+	<div class="header2">
+    <span class="header-item">NAM YUN-SEO</span>
+    <span class="header-item">BACKEND DEVELOPER</span>
+    <span class="header-item">SEOUL, SOUTH KOREA 2025</span>
+</div>
 </body>
 </html>
 

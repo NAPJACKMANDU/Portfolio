@@ -412,7 +412,7 @@ padding-left: 20px;
     <div style="display: flex; justify-content: space-between;">
         <!-- 왼쪽: About Me -->
         <div style="flex: 1;">
-            <h2 class="" style="display: flex; align-items: center; font-size: 80px">
+            <h2 class="" style="display: flex;  font-size: 80px">
                 About</h2>
                  <span style="display: flex; align-items: center;">
                	<h2 style="margin-left: 30%; padding-right: 5px; font-size: 80px">Me</h2>
