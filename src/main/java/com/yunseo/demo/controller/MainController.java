@@ -13,7 +13,7 @@ public class MainController {
 	public String mainpage() {
 		return "Main" ;
 	}
-	
+	 
 		@GetMapping("/BabyStep")
 		public String BabyStep() {
 			return "BabyStep" ;
