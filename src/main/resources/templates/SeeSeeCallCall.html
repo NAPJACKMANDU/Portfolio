@@ -1,10 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 보기</title>
+  <style type="text/css">
+    /* 기본 스타일 */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* 헤더 스타일 */
+    header {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .back-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* 메인 컨테이너 */
+    main {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 게시글 정보 */
+    .post-header {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .post-header h2 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .post-meta {
+      color: #555;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+
+    /* 본문 스타일 */
+    .post-content p {
+      margin: 10px 0;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    /* 이미지 */
+    .post-image {
+      width: 100%;
+      max-width: 800px;
+      height: 300px;
+      background: url('background.jpg') center/cover no-repeat;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+
+    /* 댓글 섹션 */
+    .comments {
+      margin-top: 30px;
+    }
+
+    .comments h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .comment {
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+    }
+
+    .comment p {
+      margin: 0;
+    }
+
+    .comment .author {
+      font-weight: bold;
+    }
+
+    .comment-form {
+      margin-top: 20px;
+    }
+
+    .comment-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .comment-form button {
+      margin-top: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .comment-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-SeeSeeCallCall
+  <header>
+    <h1>게시글 보기</h1>
+    <a href="index.html" class="back-btn">← 게시판으로</a>
+  </header>
+
+  <main>
+    <!-- 게시글 헤더 -->
+    <section class="post-header">
+      <h2>AWS S3에 대한 설명</h2>
+      <p class="post-meta">작성자: 납작만두 · 작성일: 2025-01-10</p>
+    </section>
+
+    <!-- 게시글 이미지 -->
+    <div class="post-image"></div>
+
+    <!-- 게시글 본문 -->
+    <section class="post-content">
+      <p>AWS는 총 세 가지로 나뉘어진다:</p>
+      <p><strong>S3</strong>, <strong>EC2</strong>, <strong>RDS</strong>.</p>
+      <p>S3는 데이터를 저장하는 스토리지 서비스이고, EC2는 가상 서버를 제공하며, RDS는 데이터베이스 서비스를 관리한다.</p>
+    </section>
+
+    <!-- 댓글 섹션 -->
+    <section class="comments">
+      <h3>댓글</h3>
+
+      <!-- 댓글 목록 -->
+      <div class="comment">
+        <p class="author">김코딩:</p>
+        <p>AWS S3 정말 유용한 서비스네요!</p>
+      </div>
+      <div class="comment">
+        <p class="author">박개발:</p>
+        <p>설명이 깔끔해서 좋습니다. 감사합니다!</p>
+      </div>
+
+      <!-- 댓글 작성 -->
+      <div class="comment-form">
+        <textarea placeholder="댓글을 작성하세요..." rows="3"></textarea>
+        <button>댓글 달기</button>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
