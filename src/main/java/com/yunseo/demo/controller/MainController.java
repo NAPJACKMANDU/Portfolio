@@ -31,6 +31,6 @@ public class MainController {
 		
 		@GetMapping("/portfolio")
 		public String portfolio() {
-			return "portfolio" ;
+			return "portfolio" ;  
 		}
 }
