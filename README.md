@@ -30,9 +30,3 @@
 ![Portfolio Stack](https://github.com/user-attachments/assets/474fc894-367c-43dc-815e-75a8f0870f71)
 
 <br>
-
-# 💣 트러블슈팅
-
-<br>
-
-# ✏ 느낀점
